@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyToDo list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <div class="header">
+            <div class="left_header">
+                <div><img src="img/menu.png" alt="" srcset=""></div>
+                <div><img src="img/home.png" alt="" srcset=""></div>
+            </div>
+            <div class="right_header">
+                <div><img src="img/plus.png" alt="" srcset=""></div>
+            </div>
+        </div>
+        <div class="mid">
+            <div class="left_panel">
+                <div class="panel">
+                    <div> <img src="img/inbox.png"></div>
+                    <div>Default Project</div>
+                </div>
+                <!-- <div class="panel">
+                    <div><img src="/img/calender.png" alt="" srcset=""></div>
+                    <div>Today</div>
+                </div> -->
+                <div class="panel">
+                    <div><img src="img/menu.png" alt="" srcset=""></div>
+                    <div>Projects</div>
+                </div>
+                <div class="projectCont">
+                    <!-- <div class="newProject">
+                        <div> New</div>
+                        <div class="projectImg"><img src="/img/bin.png"></div>
+                    </div> -->
+                </div>
+                <div>
+                    <div class="new">New Project</div>
+                </div>
+
+
+            </div>
+            <div class="titles">
+                <div class="todo">
+                    <div>Title</div>
+                    <div>Description</div>
+                    <div>Date</div>
+                    <div>Priority</div>
+                    <div>Project</div>
+                    <div class="name"></div>
+                    <div></div>
+                </div>
+                <!-- <div class="todo">
+                <div>Title</div>
+                <div>Description</div>
+                <div>Date</div>
+                <div>Priority</div>
+                <div>Project</div>
+            </div> -->
+                <div class="add"></div>
+            </div>
+        </div>
+    </div>
+    <div class="popup hide">
+        <div>New Task</div>
+        <hr>
+        <div class="flex">
+            <div class="leftPopup">
+                <form action="" id="form1">
+                    <label for="title">Title</label>
+                    <input id="title" type="text" required>
+                    <label for="desc">Description</label>
+                    <input id="desc" type="text" required>
+                </form>
+            </div>
+            <div class="rightPopup">
+                <form action="" id="form2">
+                    <label for="date">Date</label>
+                    <input id="date" type="date" required>
+                    <label for="pri">Priority</label>
+                    <select id="pri" name="Priority" required>
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                    <label for="project">Project</label>
+                    <select id="project" name="Project" required>
+                        <option>Default</option>
+                    </select>
+                </form>
+
+            </div>
+        </div>
+        <button>Close</button>
+        <button type="submit">Submit</button>
+        <button class="hide" type="submit">Update</button>
+    </div>
+    <div class="projectPopup hide">
+        <div>New Project</div>
+        <hr>
+        <div class="projectFlex">
+            <label for="name">Name</label>
+            <input id="name" type="text">
+            <div class="flex">
+                <button>Close</button>
+
+                <button type="submit"> Add</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
