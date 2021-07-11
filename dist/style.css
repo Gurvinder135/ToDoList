@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 .header,.left_header,.left_panel,.panel,.flex{
     display: flex;
